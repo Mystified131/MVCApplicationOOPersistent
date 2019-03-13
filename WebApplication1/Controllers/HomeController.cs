@@ -87,6 +87,8 @@ namespace WebApplication1.Controllers
                     context.Shapes.Add(Segment);
                     TheList.Add(Segment);
 
+                    ViewBag.segerr = "A segment currently has no functions to calculate.";
+
                 }
 
                 context.SaveChanges();

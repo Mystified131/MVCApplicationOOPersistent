@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication1</title>
+    <title>Random String Generator/Persistent</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,22 +18,25 @@
 </head>
 <body>
     <div class="jumbotron">
-        <p>
 
-            <h2>
-                <a asp-area="" asp-controller="Home" asp-action="Index">  Add  </a>
-                <a asp-area="" asp-controller="Home" asp-action="Result">  Results  </a>
-            </h2>
-            </p>
+        <h1 align="center">MVC OO Persistent</h1>
+
+        <br />
+
+        <p>
+            <h4 align="center">
+                <a asp-area="" asp-controller="Home" asp-action="Index">   Add   </a>
+                <a asp-area="" asp-controller="Home" asp-action="Result">   Catalog   </a>
+
+            </h4>
+        </p>
     </div>
-       
-    <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - WebApplication1</p>
+            <p>&copy; 2019 Thomas Park</p>
         </footer>
     </div>
 
